@@ -6,7 +6,7 @@ export default function QuizList() {
   const [quizzes, setQuizzes] = useState([]);
   const navigate = useNavigate();
 
-  const userEmail = localStorage.getItem("email"); // 👈 logged-in user
+  const userEmail = localStorage.getItem("email");
 
   const fetchQuizzes = () => {
     api.get("/quiz/all").then((res) => {
@@ -39,7 +39,6 @@ export default function QuizList() {
             Start Quiz
           </button>
 
-          {/* 👇 Delete ONLY if creator */}
           {q.createdBy?.email === userEmail && (
             <button
               onClick={() => deleteQuiz(q._id)}
