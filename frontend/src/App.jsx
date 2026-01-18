@@ -13,7 +13,7 @@ export default function App() {
     <BrowserRouter>
     <Navbar />
       <Routes>
-        {/* routes stay same */}
+        
       </Routes>
       <Routes>
         <Route path="/" element={<Home />} />
