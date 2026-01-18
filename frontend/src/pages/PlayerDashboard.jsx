@@ -5,16 +5,16 @@ export default function PlayerDashboard() {
 
   return (
     <div className="dashboard">
-      <h1>🎮 Player Dashboard</h1>
+      <h1>Player Dashboard</h1>
       <p>Play quizzes and test your knowledge</p>
 
       <div className="dashboard-actions">
         <button onClick={() => navigate("/quizzes")}>
-          ▶️ Start Playing
+           Start Playing
         </button>
 
         <button onClick={() => navigate("/my-results")}>
-          🏆 My Results
+           My Results
         </button>
       </div>
     </div>
