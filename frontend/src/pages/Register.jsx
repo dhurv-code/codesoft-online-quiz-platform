@@ -9,7 +9,7 @@ export default function Register() {
     name: "",
     email: "",
     password: "",
-    role: "" // creator | player
+    role: "" 
   });
 
   const handleChange = (e) => {
@@ -24,7 +24,7 @@ export default function Register() {
     e.preventDefault();
 
     if (!form.role) {
-      alert("Arey bhai! Role choose kar 😑");
+      alert("Arey bhai! Role choose karo");
       return;
     }
     if (form.role !== "creator" && form.role !== "player") {
@@ -44,7 +44,7 @@ export default function Register() {
 
   return (
     <div className="register-container">
-      <h1>Welcome 😎</h1>
+      <h1>Welcome </h1>
       <p>Sabse pehle batao… tum ho kaun?</p>
 
       <div className="role-box">
@@ -52,7 +52,7 @@ export default function Register() {
           className={form.role === "creator" ? "active" : ""}
           onClick={() => selectRole("creator")}
         >
-          🧠 I Create Quizzes
+           I Create Quizzes
         </button>
 
         <button
