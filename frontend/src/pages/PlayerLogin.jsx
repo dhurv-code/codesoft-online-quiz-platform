@@ -22,7 +22,7 @@ export default function PlayerLogin() {
 
   return (
     <form onSubmit={handleLogin}>
-      <h2>🎮 Player Login</h2>
+      <h2> Player Login</h2>
 
       <input placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
       <input
